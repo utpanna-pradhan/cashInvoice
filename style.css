@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Full page layout */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    margin-bottom:20px;
+    overflow-x: hidden;
+}
+
+.outer-container{
+    padding-bottom:40px !important;
+}
+
+/* Inner container with 90% width of the outer container */
+.inner-container {
+    border: 2px solid #000000;
+    width: 60%;  /* Inner container width */
+    padding: 20px;
+    background-color: #ffffff; /* White background for inner container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    border-radius: 8px;
+    margin:auto !important;
+    
+}
+
+
+/* Table section */
+.table-container {
+    margin: 20px 0;
+    /* padding: 20px; */
+    position: relative;
+    background-color: White;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+
+.table3_row2{
+    height:400px; 
+}
+.watermark-table .table3_row2{
+    width: 100%;
+    border-bottom:2px solid black; 
+    background-image: url('https://e7.pngegg.com/pngimages/445/271/png-clipart-round-gray-h-logo-illustration-robert-bosch-gmbh-gruppo-efc-logo-company-company-profile-miscellaneous-angle.png'); /* Watermark image URL */
+    background-size: contain; /* Ensure watermark stays within the table */
+    background-position: center;
+    border-collapse: collapse;
+    background-repeat: no-repeat; /* Prevent repeat */
+}
+
+.watermark-table th, .watermark-table td {
+    padding: 6px;
+    text-align: center;
+    
+  
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to show watermark underneath */
+}
+
+
+
+
+
+/*style----------------------------------------------------------*/
+.top{
+    margin-bottom:0px;
+}
+.top_row{
+    margin-top: -18px;
+}
+
+.row2_top{
+    margin-bottom: -17px;
+
+}
+/*table1*/
+.table1_left{
+    padding:5px;
+    border-right:2px solid black;
+    border-bottom:none;
+   
+    width:40%;
+}
+.table1_right{
+    border-bottom:none;
+   
+    padding:5px;
+    width:60%;
+}
+.table1_book{
+    margin-bottom:0px;
+    margin-top:4px;
+}
+.table1_sno{
+    margin-bottom:-10px;  
+}
+.table1_purchaser{
+    margin-bottom:-13px; 
+    margin-top:4px;
+}
+.table1_tax{
+    margin-top:-15px;
+    margin-bottom:-10px;  
+}
+.table1_date{
+    text-indent:50px;
+}
+
+
+/*table2*/
+.table2_row1{
+    border-top:2px solid black;
+   
+}
+.table2_cell{
+    border-bottom: none;
+}
+.table2_para{
+    margin-bottom:-10px;
+}
+.table2_head{
+    margin-bottom:0px;     
+
+}
+.table2_subhead{
+    margin-bottom:0px;  
+}
+
+/*table3*/
+.watermark-table th {
+    border-top:2px solid black;  
+    border-bottom:1px solid black;   
+    border-right:1px solid black;  
+}
+.watermark-table td{
+    border-right:1px solid black;  
+}
+.table3_last_th{
+    border-right:none !important;  
+}
+.watermark-table th , .watermark-table td{
+    color: black;
+}
+
+/*table4*/
+.table_4{
+    width:100%;
+    margin-top:-18px;
+    font-size:13px;
+}
+.table4_col1{
+    width: 60%;
+
+    border-right:2px solid black;   
+}
+.table4_col2{
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right:2px solid black;    
+}
+.table4_col3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20%;  
+}
+
+/*table5*/
+.table5_row{
+    margin: auto;
+    border-top: 2px solid black;
+}
+.table5_para{
+    width:100vw ;
+    margin-bottom:0px;
+}
+.table5_Sign{
+    font-size:13px;
+    padding-top:60px;
+}
+
+/*table6*/
+.table6_row{
+    border-top: 2px solid black;
+    width: 100%;
+    margin: auto;
+}
+.table6_row1{
+    margin-bottom:0px; 
+}
+.table6_row2{
+    margin-bottom:13px;   
+}
+
+/********************media query**********************************************/
+/* @media (max-width: 1192px){
+    .table1_book{
+        margin-top:-20px;
+    }} */
+    @media (max-width: 1152px){
+       .table5_row2_total{
+            width: -webkit-fill-available;
+        }
+       
+        .table5_Cash {
+            text-align:end !important;
+            padding-right:9px;
+          
+        }
+        .table1_date{
+            text-indent:20px;
+        }
+        }
+        @media (max-width: 1027px){
+       
+            .table1_date{
+                text-indent:5px;
+            }
+            }
+            @media (max-width: 964px){
+                .table1_book {
+                    margin-top: 0px;
+                }
+               .table1_sno{
+                flex-wrap: wrap;
+                }
+.table1_date_name{
+    margin-top: -13px;
+}
+.table1_purchaser {
+   
+    margin-top: 0px;
+}
+                }
+    
+ @media (max-width: 987px){
+    .table5_para{
+        width: fit-content; ;
+       
+    }
+}
+                /* @media (max-width: 987px){
+        .table5_para{
+            width: auto;
+            word-wrap: break-word; 
+            word-break: break-all; 
+            white-space: normal;  
+          }
+    } */
+
+                @media (max-width: 815px){
+    /* .table1_book {
+        margin-top: -15px;
+    } */
+
+}
+@media (max-width: 768px) {
+  
+    .inner-container {
+        width: 95%;
+    }
+    .table5_Cash{
+        text-align:end !important;
+    }
+    .table1_book {
+        margin-top: 0px;
+    }
+        .table1_date_name {
+        margin-top: 0px;
+    }
+}
+@media (max-width: 767px) {
+.top_row_heading{
+    margin-top: -70px;
+}
+.top_row_invoice{
+    margin-top: -60px;
+}
+.row2_top_mid{
+    margin-top: -30px;  
+}
+.row2_top_end{
+    margin-top: -30px;   
+}
+}
+@media (max-width: 753px) {
+    /* .table1_book {
+        margin-top: -20px;
+    } */
+}
+@media (max-width: 609px){
+    .table1_book {
+        margin-top: 0px;
+    }
+    .table1_date_name {
+        margin-top: -13px;
+    }
+}
+@media (max-width:515px){
+    /* .table1_book {
+        margin-top: -20px;
+    } */
+}
+@media (max-width:484px){
+    .table1_date {
+        text-indent: 0px !important;
+    }
+
+}
+@media (max-width: 468px){
+    .inner-container {
+        width: 95%;
+        overflow-x: auto;
+        overflow-y: hidden; 
+        white-space: nowrap; 
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
+      }
+      
+      .inner-container::-webkit-scrollbar {
+        display: none; 
+      }
+      table {
+        width: 100%; 
+        border-collapse: collapse; 
+      }
+      
+      th, td {
+        border: 1px solid #ddd; 
+        padding: 8px;
+        white-space: nowrap; 
+      }
+      
+      th {
+        background-color: #f4f4f4; 
+        position: sticky;
+        top: 0; 
+      } 
+      .top_row{
+        width: 280% !important;
+      }
+      .top_row_heading{
+        margin-top:-70px;
+      }
+      .top_row_invoice{
+        margin-top:-70px;
+      }
+      .row2_top{
+        width: 280% !important;
+      }
+      .row2_top_mid{
+        margin-top: -22px;
+      }
+      .row2_top_end{
+        margin-top: -30px;
+      }
+
+      .table-container{
+        width: 280% !important;
+      }
+      .table1_book {
+        margin-top: 4px;
+    }
+      .table1_date_name{
+        margin-top: 0px !important; 
+    }
+      .table1_date{
+        text-indent:220px !important;
+      }
+
+   
+      .table5_Cash{
+        text-align:end !important;
+    }
+    .table5_row2_total{
+        margin-top: -115px;
+    }
+      
+      
+}
+@media (max-width: 458px){
+    .table1_date{
+        text-indent:150px !important;
+      }
+   
+}
+@media (max-width: 431px){
+    .table2_para{
+        word-wrap: break-word; 
+        word-break: break-all; 
+        white-space: normal;  
+      }
+}
+@media (max-width: 390px){
+    .table1_date{
+        text-indent:100px !important;
+      }
+}
+
+@media (max-width: 362px){
+    .table1_date{
+        text-indent:80px;
+      }
+}
+@media (max-width: 356px){
+    .table1_date {
+    
+        text-indent: 80px !important;
+    }
+}
+@media (max-width: 324px){
+    .table1_date {
+    
+        text-indent: 60px !important;
+    }
+}
